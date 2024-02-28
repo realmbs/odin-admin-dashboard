@@ -35,3 +35,6 @@
 
 ## Source
 https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
+
+## Icons
+https://pictogrammers.com/library/mdi/
