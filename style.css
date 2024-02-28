@@ -44,6 +44,7 @@ html {
   flex-direction: column;
   height: 20vh;
   width: 80vw;
+  padding-left: 1vw;
 }
 .top__nav__top {
   display: flex;
@@ -56,4 +57,27 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.top__nav__bottom-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.top__nav__bottom-left-text {
+  display: flex;
+  flex-direction: column;
+}
+.top__nav__bottom-left-text > p, .top__nav__bottom-left-text > h4 {
+  margin: 0;
+}
+.profile__img {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding-right: 1vw;
+}
+.top__nav__top-left, .top__nav__top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
