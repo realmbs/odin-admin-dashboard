@@ -81,3 +81,8 @@ html {
   flex-direction: row;
   align-items: center;
 }
+.grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
