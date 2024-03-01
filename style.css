@@ -1,3 +1,5 @@
+/* global */
+
 html {
   font-size: 16px;
 }
@@ -6,9 +8,13 @@ img {
   height: 2rem;
 }
 
+/* container */
+
 .container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 20vw 1fr;
+  grid-template-rows: 10vh 1fr;
+  grid-template-areas: "sidebar topnav" "sidebar grid";
 }
 
 /* side nav */
@@ -16,6 +22,7 @@ img {
 .side__nav {
   display: flex;
   flex-direction: column;
+  grid-area: sidebar;
   width: 20vw;
   height: 95vh;
   color: white;
@@ -42,6 +49,7 @@ img {
 .top__nav {
   display: flex;
   flex-direction: column;
+  grid-area: topnav;
   width: 80vw;
   height: 10vh;
 }
@@ -75,4 +83,11 @@ img {
 .top__nav__vertical p, .top__nav__vertical h3 {
   padding: 0;
   margin: 0;
+}
+
+/* grid container */
+
+.grid__container {
+  grid-area: grid;
+  display: grid;
 }
