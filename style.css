@@ -92,18 +92,20 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas: "header" "content";
   gap: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 2rem;
 }
 .grid__item {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
-  border: 1px solid black;
-  border-left: 4px solid orange;
-  border-radius: 6px;
-  /* height: 15rem; */
+  grid-area: content;
+}
+.grid__header {
+  grid-area: header;
+  height: 3rem;
 }
 .icon__container {
   display: flex;
