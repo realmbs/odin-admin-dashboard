@@ -90,9 +90,8 @@ img {
 .grid__container {
   grid-area: grid;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "header" "content";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
   gap: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -101,14 +100,16 @@ img {
 .grid__item {
   display: flex;
   flex-direction: column;
-  grid-area: content;
-}
-.grid__header {
-  grid-area: header;
-  height: 3rem;
 }
 .icon__container {
   display: flex;
   flex-direction: row;
-  align-self: flex-end;
+  justify-content: flex-end;
+}
+.grid__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 5vh;
 }
