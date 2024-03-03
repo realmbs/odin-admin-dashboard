@@ -15,7 +15,10 @@ img {
   display: grid;
   grid-template-columns: 20vw 1fr;
   grid-template-rows: 10vh 1fr;
-  grid-template-areas: "sidebar topnav" "sidebar grid";
+  /* grid-template-areas: "sidebar topnav" "sidebar grid"; */
+  grid-template-areas:
+    "sidebar topnav topnav"
+    "sidebar grid sidegrid"
 }
 
 /* side nav */
@@ -93,11 +96,10 @@ img {
 .grid__container {
   grid-area: grid;
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 1rem;
   padding-left: 1rem;
-  padding-right: 2rem;
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -121,6 +123,32 @@ img {
   align-items: flex-end;
   padding-top: 1.5rem;
   gap: 0.5rem;
+}
+
+/* side grid */
+
+.side__grid__container {
+  display: grid;
+  grid-area: sidegrid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 20vw;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: rgba(128, 128, 128, 0.400);
+  z-index: 1;
+}
+
+.side__grid__card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* btn */
