@@ -100,16 +100,16 @@ img {
 .grid__item {
   display: flex;
   flex-direction: column;
+  border-radius: 6px;
+  border: 1px solid black;
+  border-left: 5px solid orange;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .icon__container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-}
-.grid__header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  height: 5vh;
+  align-items: flex-end;
+  padding-top: 3rem;
 }
